@@ -1,10 +1,10 @@
 ./bin/jqassistant.sh scan -f lib/com.buschmais.jqassistant.*.jar -reset
 
 arrConcepts=()
+arrConcepts+=(classpath:Resolve)
 arrConcepts+=(default)
 arrConcepts+=(package:DependencyDiagram)
 arrConcepts+=(metrics:Top10LoCAndCC)
-arrConcepts+=(classpath:Resolve)
 arrConcepts+=(module:ClassDiagram)
 
 vals=$(printf ",%s" "${arrConcepts[@]}")
